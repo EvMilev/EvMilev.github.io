@@ -1,1 +1,36 @@
-/* Frame */
+html {
+    font-size: 16px;
+    background-color: rgba(164, 235, 244, 0.5);
+}
+
+body {
+    display:block;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    /* width: 86rem; */
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.23em;
+    font-family: 'Inter';
+    color: black;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    border: solid red 1px;
+/* text-transform: lowercase;
+font-feature-settings: 'kern' off;
+ */
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    border: solid red 1px;
+}
+
+/* header  #aboutMe {
+    justify-content: center;
+} */

@@ -20,17 +20,18 @@ header {
     font-weight: 700;
     font-size: 3rem;
     border: solid red 1px;
-/* text-transform: lowercase;
-font-feature-settings: 'kern' off;
- */
 }
 
 header ul {
+    margin-left: 38%;
+    margin-right: auto;
     display: flex;
+    justify-content: center;
     list-style-type: none;
     border: solid red 1px;
 }
 
-/* header  #aboutMe {
-    justify-content: center;
-} */
+header ul li{
+   padding-right:3rem;
+}
+

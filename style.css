@@ -4,18 +4,19 @@
 
 html {
     font-size: 16px;
-    background-color: rgba(164, 235, 244, 0.5);
+    height: 100vh;
     font-family: 'Inter';
+    
 }
 
-.body-circle {
-    position: relative;
-    margin: auto;
-    width: auto;
-    height: 100%;
-    background: #dcf7fb;
-    border-radius: 50%;
-   
+body {
+    
+    height: auto;
+    background-image: url(/Resources/Ellipse\ 1\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position:bottom; 
+    background-size:100vh;
+    background-color: rgba(164, 235, 244, 0.5);
 }
 
 header {
@@ -47,22 +48,17 @@ header ul li{
 }
 
 article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
+    height: 100%;
     width: 100%;
+    justify-content: center;
     align-items: center;
+    /* padding: 10rem; */
     border: solid red 1px;
-}
-
-article .picture {
-    align-self: center;
-    width: 25rem ;
-    height: 40rem;
-    border: solid red 1px;
-    background-image: url(/Resources/IMG_1405.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    /* margin-left: 40rem; */
-    
 }
 
 
@@ -71,7 +67,7 @@ article .picture {
     display: flex;
     width: 50rem;
     height: 50rem;
-    margin-left: 9.5rem;
+    margin-left: 0rem;
     align-items:center;
     justify-content: center;
     background: #e8f5fa;
@@ -103,5 +99,16 @@ article .picture {
 }
 
 
+article .picture {
+    align-self: center;
+    width: 20rem ;
+    height: 35rem;
+    border: solid red 1px;
+    background-image: url(/Resources/IMG_1405.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* margin-left: 40rem; */
+    
+}
 
 

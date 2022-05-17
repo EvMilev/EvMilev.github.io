@@ -10,10 +10,6 @@ html {
 
 body {
     height: auto;
-    background-image: url(/Resources/Ellipse\ 2.png);
-    background-repeat: no-repeat;
-    background-position:bottom; 
-    background-size:100vh;
     background-color: rgba(217, 199, 255, 0.5);
 }
 
@@ -31,22 +27,18 @@ header {
 }
 
 header ul {
-    margin-left: 40%;
+    margin-left: 30%;
     margin-right: auto;
     display: flex;
     justify-content: center;
     list-style-type: none;
 }
 
-/* a {
-    text-decoration: none;
-} */
-
- #aboutMe {
+#projects  {
     color: black;
     background-color: rgba(41,6,96,0.3);
     padding: 0.5rem;
-    margin-right: 3rem;
+    margin-left: 3rem;
     border: solid 1px #6810F6;
     z-index: 5;
     text-decoration: none; 
@@ -57,15 +49,11 @@ a:hover {
     color: white;
 }
 
-#projects {
+#aboutMe {
     padding: 0.5rem;
 }
 
 article {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     height: 100%;
     width: 100%;
@@ -73,15 +61,42 @@ article {
     align-items: center;
 }
 
-.circle-name {
+.js-projects {
     position: relative;
     display: flex;
-    width: 60rem;
-    height: 60rem;
-    margin-left: 0rem;
+    width: 40rem;
+    height: 40rem;
+    margin-left: 5rem;
+    margin-top: -5rem;
     align-items:center;
     justify-content: center;
-    background: #e8f5fa;
+    background: rgba(241, 245, 247, 0.929);
+    opacity: 0.75;
+    border-radius: 100%;
+    font-size: 2.25rem;
+    line-height: 2;
+    letter-spacing: 0.13em;
+    padding:1rem;    
+}
+
+.js-projects .projects-text {
+    width: 30rem;
+    font-size: 2rem;
+    line-height: 2;
+    letter-spacing: 0.13em;
+    padding:2rem;
+    color:black; 
+}
+
+.html-projects {
+    position: relative;
+    display: flex;
+    width: 50rem;
+    height: 50rem;
+    margin-left: -6rem;
+    align-items:center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.544);
     opacity: 0.75;
     border-radius: 100%;
     font-size: 2.25rem;
@@ -90,32 +105,31 @@ article {
     padding:2rem;    
 }
 
-.circle-name .name-and-text {
-    width: 40rem;
-    font-size: 2rem;
+.html-projects .html-projects-text {
+    width: 30rem;
+    font-size: 2.3rem;
     line-height: 2;
     letter-spacing: 0.13em;
     padding:2rem;
     color:black; 
 }
 
-.circle-name .name-and-text h3 {
+h3 {
     font-weight: 700;
 }
 
-.circle-name .name-and-text h4 {
+h4 {
     font-weight: 400;
 }
 
-article .picture {
-    width: 20rem ;
-    height: 35rem;
-    background-image: url(/Resources/IMG_1405.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%; 
-    background-position: center;
-    background-blend-mode: luminosity;
+skills {
+    display: flex;
+   
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
+
 
 .skills {
     display: flex;
@@ -137,4 +151,14 @@ article .picture {
 .email {
     margin-top: 2rem;
     font-size: 2.1rem;
+}
+
+article .picture {
+    width: 20rem ;
+    height: 35rem;
+    background-image: url(/Resources/IMG_1405.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    background-position: center;
+    background-blend-mode: luminosity;
 }

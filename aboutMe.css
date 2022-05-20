@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;   
+}
+
+html {
+    font-size: 16px;
+    height: 100vh;
+    font-family: 'Inter';  
+}
+
+body {
+    display: flex;
+    height: auto;
+    background-image: url(/Resources/Ellipse\ 2.png);
+    background-repeat: no-repeat;
+    background-position:bottom; 
+    background-size:100vh;
+    background-color: rgba(217, 199, 255, 0.5);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.23em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+header ul {
+    margin-left: 40%;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#aboutMe {    
+    background-color: rgba(41,6,96,0.3);
+    padding: 0.5rem;
+    margin-right: 3rem;
+    z-index: 5;
+    text-decoration: none; 
+    font-size: 3rem;
+}
+
+#projects {
+    z-index: 5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: rgb(248, 245, 245);
+}
+
+#projects a {
+    color: rgb(41,6,96);
+}
+
+#projects a:hover {
+    color:white;
+    background-color: rgb(41,6,96);
+    padding: 0.5rem;
+}
+
+#projects {
+    padding: 0.5rem;
+}
+
+/* ------- main part article ------- */
+
+
+article {
+    position: absolute;
+    display:flex;
+    flex-wrap: wrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center
+}
+
+.circle-name {
+    position: relative;
+    display: flex;
+    width: 60rem;
+    height: 60rem;
+    margin-top: 4rem;
+    margin-left: 0rem;
+    align-items:center;
+    justify-content: center;
+    background: #e8f5fa;
+    opacity: 0.75;
+    border-radius: 100%;
+    font-size: 2.25rem;
+    line-height: 2;
+    letter-spacing: 0.13em;
+    padding:2rem;    
+}
+
+.circle-name .name-and-text {
+    width: 40rem;
+    font-size: 2rem;
+    line-height: 2;
+    letter-spacing: 0.13em;
+    padding:2rem;
+    color:black; 
+}
+
+.circle-name .name-and-text h3 {
+    font-weight: 700;
+}
+
+.circle-name .name-and-text h4 {
+    font-weight: 400;
+}
+
+article .picture {
+    width: 20rem ;
+    height: 35rem;
+    margin-top: 7rem;
+    background-image: url(/Resources/IMG_1405.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    background-position: center;
+    background-blend-mode: luminosity;
+}
+
+.skills-icons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.skills img {
+    padding: 0.3rem;
+}
+
+.picture-with-email {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.email {
+    margin-top: 2rem;
+    font-size: 2.1rem;
+}
+
+/* ----- header media rulset for small devices ---- */
+
+@media only screen and (min-width: 400px) {
+    header {
+        letter-spacing: 0.1em;
+        font-size: 2.5rem;
+    }
+    header ul {
+        margin-left: auto;
+        margin-right: auto;
+        }
+    #aboutMe {
+        font-size: 2.5rem;
+    }
+}
+
+/* ----- article media rulset for small devices ---- */
+
+@media only screen and (min-width: 400px) {
+    .circle-name {
+        height: auto;
+    }
+    .circle-name .name-and-text {
+        padding: 3rem;
+    }
+
+    .name-picture-container .name-picture {
+        position:-ms-page;
+        display: flex;
+        border: solid red 1px;
+    }
+}

@@ -5,11 +5,12 @@
 html {
     font-size: 16px;
     height: 100vh;
-    font-family: 'Inter';  
+    font-family: 'Inter';
 }
 
 body {
     height: auto;
+    width: 100%;
     background-color: rgba(217, 199, 255, 0.5);
 }
 
@@ -18,16 +19,16 @@ header {
     width: 100%;
     justify-content: center;
     text-align: center;
-    letter-spacing: 0.23em;
+    letter-spacing: 0.23rem;
     font-family: 'Inter';
     color: black;
     font-style: normal;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 header ul {
-    margin-left: 43%;
+    margin-left: 42%;
     margin-right: auto;
     display: flex;
     justify-content: center;
@@ -40,7 +41,7 @@ header ul {
     margin-right: 3rem;
     z-index: 5;
     text-decoration: none; 
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 a {
@@ -72,7 +73,7 @@ a:hover {
 
 article {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; <-----for media mobile version*/
     height: 100%;
     width: 100%;
     justify-content: center;
@@ -82,53 +83,53 @@ article {
 .js-projects {
     position: relative;
     display: flex;
-    width: 40rem;
-    height: 40rem;
-    margin-left: 5rem;
-    margin-top: -5rem;
+    width: 25rem;
+    height: 25rem;
+    margin-top: -2rem;
+    margin-left: 1rem;
     align-items:center;
     justify-content: center;
     background: rgba(241, 245, 247, 0.929);
     opacity: 0.75;
     border-radius: 100%;
-    font-size: 2.25rem;
+    font-size: 1rem;
     line-height: 2;
     letter-spacing: 0.13em;
     padding:1rem;    
 }
 
 .js-projects .projects-text {
-    width: 27rem;
-    font-size: 2.3rem;
+    width: 23rem;
+    font-size: 1.2rem;
     line-height: 2;
     letter-spacing: 0.13em;
     padding:2rem;
-    color:black; 
+    color:black;
 }
 
 .html-projects {
     position: relative;
     display: flex;
-    width: 50rem;
-    height: 50rem;
+    width: 30rem;
+    height: 30rem;
     margin-left: -6rem;
     align-items:center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.544);
     opacity: 0.75;
     border-radius: 100%;
-    font-size: 2.25rem;
+    font-size: 1rem;
     line-height: 2;
-    letter-spacing: 0.13em;
+    letter-spacing: 0.13rem;
     padding:2rem;    
 }
 
 .html-projects .html-projects-text {
     width: 30rem;
-    font-size: 2.3rem;
+    font-size: 1.2rem;
     line-height: 2;
     letter-spacing: 0.13em;
-    padding:2rem;
+    padding:4rem;
     color:black; 
 }
 
@@ -152,12 +153,14 @@ skills {
 .skills {
     display: flex;
     flex-direction: column;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .skills img {
     padding: 0.3rem;
+    width: 4rem;
+    height: auto;
 }
 
 .picture-with-email {
@@ -168,12 +171,12 @@ skills {
 
 .email {
     margin-top: 2rem;
-    font-size: 2.1rem;
+    font-size: 1.1rem;
 }
 
 article .picture {
-    width: 20rem ;
-    height: 35rem;
+    width: 10rem ;
+    height: 17rem;
     background-image: url(/Resources/IMG_1405.jpeg);
     background-repeat: no-repeat;
     background-size: 100%; 

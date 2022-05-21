@@ -78,7 +78,6 @@ ul li a:hover {
 article {
     position: absolute;
     display:flex;
-    /* flex-wrap: wrap; <----- for mobile version */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -159,44 +158,44 @@ article .picture {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* ----- header media rulset for small devices ---- */
 
-/* @media only screen and (min-width: 40px) {
+
+@media only screen and (max-width: 420px) {
     header {
         letter-spacing: 0.1em;
-        font-size: 2.5rem;
+        font-size: 1.2rem;
     }
     header ul {
         margin-left: auto;
         margin-right: auto;
         }
     #aboutMe {
-        font-size: 2.5rem;
+        font-size: 1.2rem;
     }
-} */
+} 
 
 /* ----- article media rulset for small devices ---- */
 
-/* @media only screen and (min-width: 400px) {
+@media only screen and (max-width: 420px) {
+
+    article{
+        flex-wrap: wrap;
+    }
     .circle-name {
-        height: 50rem;
+        height: 100vh;
     }
     .circle-name .name-and-text {
-        padding: 3rem;
+        padding: 1.5rem;
     }
 
     .name-picture-container .name-picture {
         display: flex;
         border: solid red 1px;
     }
-} */
+     
+    article .picture {  
+        width: 9rem;
+        height: 14rem;
+        margin-top: -1rem;
+}

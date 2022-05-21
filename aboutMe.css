@@ -73,6 +73,7 @@ ul li a:hover {
     padding: 0.5rem;
 }
 
+
 /* ------- main part article ------- */
 
 
@@ -108,7 +109,7 @@ article {
 }
 
 .circle-name .name-and-text {
-    width: 40rem;
+    width: auto;
     font-size: 2rem;
     line-height: 2;
     letter-spacing: 0.13em;
@@ -159,7 +160,7 @@ article .picture {
 
 /* ----- header media rulset for small devices ---- */
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 40px) {
     header {
         letter-spacing: 0.1em;
         font-size: 2.5rem;
@@ -177,14 +178,13 @@ article .picture {
 
 @media only screen and (min-width: 400px) {
     .circle-name {
-        height: auto;
+        height: 50rem;
     }
     .circle-name .name-and-text {
         padding: 3rem;
     }
 
     .name-picture-container .name-picture {
-        position:-ms-page;
         display: flex;
         border: solid red 1px;
     }

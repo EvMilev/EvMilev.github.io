@@ -78,6 +78,7 @@ ul li a:hover {
 article {
     position: absolute;
     display:flex;
+    flex-wrap: wrap;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -163,39 +164,63 @@ article .picture {
 
 @media only screen and (max-width: 420px) {
     header {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
         letter-spacing: 0.1em;
         font-size: 1.2rem;
     }
+
     header ul {
         margin-left: auto;
         margin-right: auto;
         }
+
     #aboutMe {
         font-size: 1.2rem;
     }
+
 } 
 
 /* ----- article media rulset for small devices ---- */
 
 @media only screen and (max-width: 420px) {
 
-    article{
-        flex-wrap: wrap;
-    }
-    .circle-name {
-        height: 100vh;
-    }
-    .circle-name .name-and-text {
-        padding: 1.5rem;
+    body {
+        position: relative;
     }
 
-    .name-picture-container .name-picture {
-        display: flex;
-        border: solid red 1px;
+    article{
+        flex-wrap: wrap;
+        margin-top: 24%;
     }
-     
+
     article .picture {  
-        width: 9rem;
+        display: none;
+    }
+
+    .circle-name {
+        display: flex;
+    }
+
+    .name-and-text .text-and-picture {
+        float: right;
+        width: 7rem;
         height: 14rem;
-        margin-top: -1rem;
+        background-image: url(/Resources/IMG_1405.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100%; 
+        background-position: center;
+        margin-right: 0.4rem;
+    }
+
+    .circle-name .name-and-text {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+    }
+    
+    .skills {
+        margin-top: -2rem;
+    }
 }

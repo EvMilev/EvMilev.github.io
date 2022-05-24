@@ -71,6 +71,9 @@ a:hover {
     padding: 0.5rem;
 }
 
+
+/*----- main article - body ----- */
+
 article {
     display: flex;
     /* flex-wrap: wrap; <-----for media mobile version*/
@@ -149,10 +152,18 @@ skills {
     margin-right: 5rem;
 }
 
+.picture-with-email {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 .skills {
     display: flex;
-    flex-direction: column;
+    margin-top: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -163,14 +174,7 @@ skills {
     height: auto;
 }
 
-.picture-with-email {
-    display: block;
-    justify-content: center;
-    text-align: center;
-}
-
 .email {
-    margin-top: 2rem;
     font-size: 1.1rem;
 }
 
@@ -181,5 +185,46 @@ article .picture {
     background-repeat: no-repeat;
     background-size: 100%; 
     background-position: center;
-    background-blend-mode: luminosity;
+}
+
+/* ----- header media rulset for small devices ---- */
+
+
+@media only screen and (max-width: 420px) {
+    header {
+        letter-spacing: 0.1em;
+        font-size: 1.2rem;
+    }
+    header ul {
+        margin-left: auto;
+        margin-right: auto;
+        }
+    #projects {
+        font-size: 1.2rem;
+    }
+    #projects {
+        margin-right: 1.3rem;
+    }
+} 
+
+/* ----- article media rulset for small devices ---- */
+
+@media only screen and (max-width: 420px) {
+
+    article{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .html-projects {
+        margin-top: -2rem;
+        margin-left: 2rem;
+    }
+     
+    article .picture {  
+        width: 9rem;
+        height: 14rem;
+        margin-top: 2rem;
+    }
+    
+
 }

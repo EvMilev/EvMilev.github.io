@@ -2,11 +2,15 @@
     box-sizing: border-box;   
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
 html {
     font-size: 16px;
     height: 100vh;
-    font-family: 'Inter';
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
+
+
 
 body {
     height: auto;
@@ -20,7 +24,7 @@ header {
     justify-content: center;
     text-align: center;
     letter-spacing: 0.23rem;
-    font-family: 'Inter';
+    font-family: 'Kdam Thmor Pro', sans-serif;
     color: black;
     font-style: normal;
     font-weight: 700;
@@ -35,36 +39,41 @@ header ul {
     list-style-type: none;
 }
 
-#projects  {
+#projects {
     background-color: rgba(41,6,96,0.3);
     padding: 0.5rem;
     margin-right: 3rem;
-    z-index: 5;
+    z-index: 100;
     text-decoration: none; 
     font-size: 1.5rem;
 }
 
 a {
     text-decoration: none;
+    padding: 0.5rem;
 }
 
 a:hover {
     color: white;
-   
 }
-
+#projects:hover {
+    background-color: rgb(41,6,96);
+    z-index: 100;
+}
 #aboutMe {
     padding: 0.5rem;
+    
 }
 
-#aboutMe a {
+#aboutMe  {
     color: rgb(41,6,96);
+    z-index: 100;
 }
 
-#aboutMe a:hover {
+#aboutMe:hover {
     color:white;
     background-color: rgb(41,6,96);
-    padding: 0.5rem;
+    z-index: 100;
 }
 
 #projects {
@@ -94,7 +103,7 @@ article {
     align-items:center;
     justify-content: center;
     background: rgba(241, 245, 247, 0.929);
-    opacity: 0.75;
+    /* opacity: 0.75; */
     border-radius: 100%;
     font-size: 1rem;
     line-height: 2;
@@ -120,7 +129,6 @@ article {
     align-items:center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.544);
-    opacity: 0.75;
     border-radius: 100%;
     font-size: 1rem;
     line-height: 2;
@@ -193,6 +201,7 @@ article .picture {
 
 @media only screen and (max-width: 420px) {
     header {
+        width: 100%;
         letter-spacing: 0.1em;
         font-size: 1.2rem;
     }
@@ -212,9 +221,12 @@ article .picture {
 
 @media only screen and (max-width: 420px) {
 
+    body {
+        overflow-x: hidden;
+    }
+    
     article{
         flex-wrap: wrap;
-        width: 100%;
     }
     .html-projects {
         margin-top: -2rem;
@@ -227,5 +239,7 @@ article .picture {
         margin-top: 2rem;
     }
     
-
+    .picture-with-email {
+        margin-top: -1rem;
+    }
 }

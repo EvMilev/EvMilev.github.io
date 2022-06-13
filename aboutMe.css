@@ -12,6 +12,8 @@ html {
 
 body {
     display: flex;
+    flex-direction: column;
+    height: 100%;
     background-image: url(/Resources/Ellipse\ 2.png);
     background-repeat: no-repeat;
     background-position:bottom; 
@@ -22,13 +24,14 @@ body {
 header {
     display: flex;
     width: 100%;
+    height: 7rem;
     justify-content: center;
     text-align: center;
     letter-spacing: 0.23rem;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 1.5rem;;
+    font-size: 1.5rem;
 }
 
 header ul {
@@ -83,10 +86,12 @@ a:hover {
 /* ------- main part article ------- */
 
 
+
 article {
-    position: absolute;
+    position: relative;
     display:flex;
     flex-wrap: wrap;
+    /* margin-top: 20%; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -96,7 +101,7 @@ article {
     align-items: center;
 }
 
-.circle-name {
+.circle-name  {
     position: relative;
     display: flex;
     width: 35rem;
@@ -110,7 +115,6 @@ article {
     line-height: 2;
     letter-spacing: 0.13rem;
     padding:1rem;    
-    border: solid 1px red;
 }
 
 .circle-name .name-and-text {
@@ -120,7 +124,6 @@ article {
     letter-spacing: 0.13em;
     /* padding:1rem; */
     color:black; 
-    border: solid 1px red;
 }
 
 .circle-name .name-and-text h3 {
@@ -201,7 +204,7 @@ article .picture {
 
     article{
         flex-wrap: wrap;
-        margin-top: 40%;
+        margin-top: 5%;
     }
 
     article .picture {  

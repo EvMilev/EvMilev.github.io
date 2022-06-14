@@ -14,10 +14,8 @@ function smallerCircle () {
     targetFontSize.style.fontSize = '1rem'
 };
 
-
 // targetCircle.onmouseover = function() {biggerCircle()}
 // targetCircle.onmouseout = function() {smallerCircle()}
-
 
 targetCircle.addEventListener('mouseover', biggerCircle);
 targetCircle.addEventListener('mouseout', smallerCircle);

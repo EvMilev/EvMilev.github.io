@@ -1,3 +1,6 @@
+// js for aboutMe.html 
+
+// circle changing color by mouseover mouseout
 
 let targetCircle = document.querySelector('.circle-name');
 let targetFontSize = document.querySelector('.name-and-text')
@@ -5,13 +8,15 @@ let targetFontSize = document.querySelector('.name-and-text')
 
 function biggerCircle () {
     targetCircle.style.transform = 'scale(1.2,1.2)';
-    // targetFontSize.style.fontSize = '1rem';
 };
 
 function smallerCircle () {
     targetCircle.style.transform = 'scale(1,1)';
     targetFontSize.style.fontSize = '1rem';
 };
+
+
+// image changing size and color by mouseover mouseout
 
 let targetImg = document.querySelector('.picture')
 
@@ -28,12 +33,23 @@ function luminositylImage () {
 //targetCircle.onmouseover = function() {biggerCircle()}
 // targetCircle.onmouseout = function() {smallerCircle()}
 
-targetCircle.addEventListener('mouseover', biggerCircle);
-targetCircle.addEventListener('mouseout', smallerCircle);
+function desktopDevices () {
+    targetCircle.addEventListener ('mouseover', biggerCircle)
+    targetCircle.addEventListener ('mouseout',smallerCircle);
+    targetImg.addEventListener ('mouseover', normalImage)
+    targetImg.addEventListener ('mouseout',luminositylImage);
+}
 
-targetImg.addEventListener ('mouseover', normalImage)
+desktopDevices ()
 
-targetImg.addEventListener ('mouseout',luminositylImage)
+function windowCheck (){
+    if ($(window).width() > 430) {
+    desktopDevices ()
+    }
+}
+
+windowCheck();
+
 
 
 

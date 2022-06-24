@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-image: url(/Resources/Ellipse\ 2.png);
+    background-image: url(./Resources/Ellipse\ 2.png);
     background-repeat: no-repeat;
     background-position:bottom; 
     background-size:100vh;
@@ -143,7 +143,7 @@ article {
 article .picture {  
     width: 9rem;
     height: 16rem;
-    background-image: url(/Resources/IMG_1405.jpeg);
+    background-image: url(./Resources/IMG_1405.jpeg);
     background-size: 100%; 
     background-color: rgb(217, 199, 255);
     background-blend-mode: luminosity;
@@ -182,6 +182,10 @@ article .picture {
 
 
 @media only screen and (max-width: 420px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     header {
         display: flex;
         /* justify-content: space-evenly; */
@@ -209,6 +213,14 @@ article .picture {
         overflow-x: hidden;
     }
 
+   header ul {
+       margin-bottom: 8rem; 
+    }
+    
+    article .circle-name {
+        display: none;
+    }
+
     article{
         flex-wrap: wrap;
         margin-top: 5%;
@@ -218,27 +230,26 @@ article .picture {
         display: none;
     }
 
-    .circle-name {
-        display: flex;
-    }
 
-    .circle-name{
+    article .mobile-circle-name {
+        display: flex;
         z-index: 100;
     }
     
-    .name-and-text .text-and-picture {
+
+
+    .mobile-name-text .text-and-picture {
         float: right;
         width: 7rem;
-        height: 14rem;
-        background-image: url(/Resources/IMG_1405.jpeg);
-        background-repeat: no-repeat;
+        height: 12rem;
+        background-image: url(./Resources/IMG_1405.jpeg);
         background-size: 100%; 
-        background-position: center;
-        margin-right: 0.5rem;
-        opacity: 1; 
+        background-color: rgb(217, 199, 255);
+        background-blend-mode:luminosity;
     }
 
-    .circle-name .name-and-text {
+
+    .mobile-circle-name .mobile-name-text {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         margin-bottom: 0;

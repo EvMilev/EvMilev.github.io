@@ -82,12 +82,14 @@ a:hover {
 }
 
 
+
 /*----- main article - body ----- */
+
 
 article {
     display: flex;
     flex-wrap: wrap;
-    /* flex-wrap: wrap; <-----for media mobile version*/
+    flex-wrap: wrap; /* <-----for media mobile version */
     height: 100%;
     width: 100%;
     justify-content: center;
@@ -192,7 +194,7 @@ skills {
 article .picture {
     width: 9rem;
     height: 16rem;
-    background-image: url(/Resources/IMG_1405.jpeg);
+    background-image: url(./Resources/IMG_1405.jpeg);
     background-size: 100%; 
     background-color: rgb(217, 199, 255);
     background-blend-mode:luminosity;
@@ -203,15 +205,27 @@ article .picture {
 
 
 @media only screen and (max-width: 420px) {
+    
     header {
+        display: flex;
         width: 100%;
         letter-spacing: 0.1em;
         font-size: 1.2rem;
+        margin-left: 0rem;
     }
     header ul {
-        margin-left: auto;
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
         margin-right: auto;
-        }
+    }
+    header ul li {
+        align-items: center;
+        justify-content: center;
+    }
+
     #projects {
         font-size: 1.2rem;
     }
@@ -223,10 +237,6 @@ article .picture {
 /* ----- article media rulset for small devices ---- */
 
 @media only screen and (max-width: 420px) {
-
-    body {
-        overflow-x: hidden;
-    }
     
     article{
         flex-wrap: wrap;
@@ -234,8 +244,18 @@ article .picture {
     .html-projects {
         margin-top: -2rem;
         margin-left: 2rem;
+       
     }
-     
+    
+    article .js-projects {
+        width: 100vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+
     article .picture {  
         width: 9rem;
         height: 14rem;

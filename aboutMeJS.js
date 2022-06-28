@@ -1,5 +1,4 @@
 // js for aboutMe.html 
-
 // circle changing color by mouseover mouseout
 
 let targetCircle = document.querySelector('.circle-name');
@@ -34,21 +33,29 @@ function luminositylImage () {
 // targetCircle.onmouseout = function() {smallerCircle()}
 
 function desktopDevices () {
-    targetCircle.addEventListener ('mouseover', biggerCircle)
+    targetCircle.addEventListener ('mouseover',biggerCircle)
     targetCircle.addEventListener ('mouseout',smallerCircle);
     targetImg.addEventListener ('mouseover', normalImage)
     targetImg.addEventListener ('mouseout',luminositylImage);
 }
 
-desktopDevices ()
+function mobileDevices () {
+    targetCircle.removeEventListener ('mouseover',biggerCircle);
+    targetCircle.removeEventListener ('mouseout',smallerCircle);
+    targetImg.removeEventListener ('mouseover', normalImage)
+    targetImg.removeEventListener ('mouseout',luminositylImage);
+}
 
 function windowCheck (){
-    if ($(window).width() > 430) {
-    desktopDevices ()
+    if (window.innerWidth > 430) {
+        desktopDevices ()
+    }
+    else {
+        mobileDevices()
     }
 }
 
-windowCheck();
+window.addEventListener('resize', windowCheck)
 
 
 

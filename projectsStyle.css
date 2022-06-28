@@ -1,26 +1,25 @@
-* {
-    box-sizing: border-box;   
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 html {
     font-size: 16px;
-    height: 100vh;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-
-
 body {
-    height: auto;
-    width: 100%;
+    min-width: 100vw;
     background-color: rgba(217, 199, 255, 0.5);
 }
 
 header {
     display: flex;
     width: 100%;
+    padding: 2rem;
     justify-content: center;
     text-align: center;
     letter-spacing: 0.23rem;
@@ -207,6 +206,8 @@ article .picture {
 @media only screen and (max-width: 420px) {
     
     header {
+        padding: 1rem;
+        margin-bottom: 2rem;
         display: flex;
         width: 100%;
         letter-spacing: 0.1em;
@@ -215,11 +216,10 @@ article .picture {
     }
     header ul {
         display: flex;
-        width: 100%;
-        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
         align-items: center;
         justify-content: center;
-        margin-right: auto;
     }
     header ul li {
         align-items: center;
@@ -231,6 +231,18 @@ article .picture {
     }
     #projects {
         margin-right: 1.3rem;
+    }
+
+    .js-projects{
+        width: 25rem;
+        
+    }
+    .html-projects {
+        width: 25rem;
+        height: 25rem;
+       
+        /* overflow: hidden; */
+       
     }
 } 
 
@@ -245,24 +257,28 @@ article .picture {
         margin-top: -2rem;
         margin-left: 2rem;
        
-    }
-    
+    }    
     article .js-projects {
         width: 100vw;
         height: auto;
         margin-left: auto;
         margin-right: auto;
     }
-
-    
-
     article .picture {  
         width: 9rem;
         height: 14rem;
         margin-top: 2rem;
     }
-    
     .picture-with-email {
         margin-top: -1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Media rules for horizontal mobile */
+@media only screen and (max-width: 750px) {
+    header ul {
+        margin-left: auto;
+        margin-right: auto;
     }
 }

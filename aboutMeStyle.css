@@ -14,7 +14,6 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    /* min-height: 100vh; */
     background-image: url(./Resources/Ellipse\ 2.png);
     background-repeat: no-repeat;
     background-position:bottom; 
@@ -32,9 +31,8 @@ header {
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.5rem;   
 }
-
 header ul {
     margin-left: 42%;
     margin-right: auto;
@@ -175,14 +173,9 @@ article .picture {
 
 @media only screen and (max-width: 420px) {
    
-    /* html, body {
-        max-width: 100%;
-        overflow-x: hidden;
-    } */
     header {
         display: flex;
-        /* justify-content: space-evenly; */
-        /* width: 100%; */
+       
         letter-spacing: 0.1em;
         font-size: 1.2rem;
         padding: 2rem;
@@ -203,10 +196,7 @@ article .picture {
 
 @media only screen and (max-width: 420px) {
 
-    /* body {
-        overflow-x: hidden;
-    }
-     */
+    
     article .circle-name {
         display: none;
     }
@@ -229,6 +219,7 @@ article .picture {
     
 
     .mobile-name-text .text-and-picture {
+        margin-right: 1rem;
         float: right;
         width: 7rem;
         height: 12rem;
@@ -252,6 +243,7 @@ article .picture {
 }
 
 /* Media rules for horizontal mobile */
+
 @media only screen and (max-width: 750px) {
     header ul {
         margin-left: auto;

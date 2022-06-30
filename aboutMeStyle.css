@@ -31,8 +31,9 @@ header {
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 1.5rem;   
+    font-size: 1.5rem; 
 }
+
 header ul {
     margin-left: 42%;
     margin-right: auto;
@@ -85,17 +86,13 @@ a:hover {
 
 /* ------- main part article - body ------- */
 
-
-
 article {
     display:flex;
     flex-wrap: wrap;
     left: 50%;
-    min-height: 100vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
-
 }
 
 .circle-name  {
@@ -112,6 +109,7 @@ article {
     line-height: 2;
     letter-spacing: 0.13rem;
     padding:1rem;    
+    margin-right: 5vw;
 }
 
 .circle-name .name-and-text {
@@ -175,10 +173,10 @@ article .picture {
    
     header {
         display: flex;
-       
         letter-spacing: 0.1em;
         font-size: 1.2rem;
         padding: 2rem;
+        /* margin-bottom: 2vh; */
     }
 
     header ul {
@@ -196,14 +194,12 @@ article .picture {
 
 @media only screen and (max-width: 420px) {
 
-    
     article .circle-name {
         display: none;
     }
 
     article{
         flex-wrap: wrap;
-        margin-top: 5%;
     }
 
     article .picture {  
@@ -212,7 +208,7 @@ article .picture {
 
 
     article .mobile-circle-name {
-        margin-top: 6rem;
+        margin-top: 4rem;
         display: flex;
         z-index: 100;
     }
@@ -235,6 +231,7 @@ article .picture {
         padding-right: 1.5rem;
         margin-bottom: 0;
         z-index: -10;
+        line-height: 1.8;
     }
     
     .picture-with-email-and-skills-container {
@@ -244,10 +241,9 @@ article .picture {
 
 /* Media rules for horizontal mobile */
 
-@media only screen and (max-width: 750px) {
+@media only screen and (orientation: landscape) {
     header ul {
         margin-left: auto;
         margin-right: auto;
-
     }
 }

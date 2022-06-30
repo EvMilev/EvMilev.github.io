@@ -60,11 +60,11 @@ function mobileScreensJS () {
 }
 
 function projectsWindowCheck (){
-    if (window.innerWidth > 430) {
-        desctopScreensJS ()
+    if (window.innerWidth < 430 || window.innerHeight < 420) {
+        mobileScreensJS ()
     }
     else {
-        mobileScreensJS()
+        desctopScreensJS()
     }
 }
 

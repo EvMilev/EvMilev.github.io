@@ -47,11 +47,11 @@ function mobileDevices () {
 }
 
 function windowCheck (){
-    if (window.innerWidth > 430) {
-        desktopDevices ()
+    if (window.innerWidth < 430 || window.innerHeight < 420) {
+        mobileDevices ()
     }
     else {
-        mobileDevices()
+        desktopDevices()
     }
 }
 

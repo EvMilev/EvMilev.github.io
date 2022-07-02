@@ -1,4 +1,4 @@
-// js for aboutMe.html 
+// js for index.html 
 // circle changing color by mouseover mouseout
 
 let targetCircle = document.querySelector('.circle-name');

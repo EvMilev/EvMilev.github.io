@@ -55,6 +55,7 @@ function windowCheck (){
     }
 }
 
+windowCheck ()
 window.addEventListener('resize', windowCheck)
 
 
